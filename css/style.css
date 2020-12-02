@@ -1,3 +1,245 @@
+@charset "UTF-8";
+/*Обнуление*/
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700,900);
 * {
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0; }
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+:focus, :active {
+  outline: none; }
+
+a:focus, a:active {
+  outline: none; }
+
+nav, footer, header, aside {
+  display: block; }
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+input, button, textarea {
+  font-family: inherit; 
+  resize: none;
 }
+input::-ms-clear {
+  display: none; }
+
+button {
+  cursor: pointer; }
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0; }
+
+a, a:visited {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none; }
+
+ul li {
+  list-style: none; }
+
+img {
+  vertical-align: top; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit; }
+
+/*--------------------*/
+body {
+    font-family: Lato;
+    background-color: green;
+}
+
+.button {
+  padding: 16px 40px;
+  width: 182px;
+  height: 47px;
+  text-transform: uppercase;
+  font-size: 16px;
+  background: none;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+}
+
+.menu_item {
+  margin: 20px 0;
+  padding: 0 27.5px;
+  font-size: 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+}
+
+.menu_item_active {
+  color: #ADA074;
+}
+
+.title {
+  font-size: 34px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 8.95px;
+  position: relative;
+  text-align: center;
+  padding: 0px 0px 30px 0px; }
+  .title:after {
+    content: '';
+    position: absolute;
+    width: 100px;
+    bottom: 0;
+    height: 1px;
+    left: 43.67%;
+    background-color: #000;
+    margin: 0px; }
+
+/*--- Начало секции slider ---*/
+.slider {
+    background: url(../img/slider/BG-Header.png) no-repeat 50% 50%;
+    background-size: cover;
+}
+.slider__body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+.slider__logo {
+  margin: 160px 0;
+  width: 195px;
+}
+.slider__text {
+    max-width: 754px;
+    text-align: center;
+    color: white;
+    font-size: 26px;
+    letter-spacing: 0.1em;
+    position: relative;
+    padding: 0 0 50px 0;
+    margin: 0 auto 230px auto;
+}
+
+.slider__text_head {
+    font-size: 34px;
+    text-transform: uppercase;
+}
+
+.slider__text:after{
+    content: "";
+    position: absolute;
+    width: 100px;
+    bottom: 0;
+    height: 1px;
+    left:43.67%;
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+}
+
+.slider__button {
+    margin-bottom: 0 auto 75px auto;
+    border: 1px solid #FFF;
+    color: #FFF;
+}
+
+.slider__arrow {
+  margin-bottom: 76px 0 150px 0;
+}
+
+/*--- Конец секции slider ---*/
+
+/*--- Начало секции menu_nav ---*/
+.menu_nav {
+  margin: 0 0 134px 0;
+}
+/*--- Конец секции menu_nav ---*/
+
+/*--- Начало секции about ---*/
+
+.about {
+
+}
+.about__body {
+  max-width: 823px;
+  margin: 0px auto;
+}
+.about__header {
+  margin: 0px 0px 65px 0px;
+}
+.about__title {
+  margin: 0px 0px 30px 0px;
+}
+.about__text {
+max-width: 688px;
+color: #868585;
+font-size: 14px;
+font-weight: 300;
+font-style: normal;
+letter-spacing: normal;
+line-height: 25.89px;
+text-align: center;
+margin: 0 auto;
+}
+.about__row {
+}
+.about__colomn {
+}
+.item-about__icom {
+}
+.item-about__title {
+}
+.item-about__text {
+}
+
+/*--- Конец секции about ---*/
+
+/*--- Начало секции portfolio ---*/
+
+.portfolio__button {
+
+    margin-bottom: 75px;
+    border: 1px solid #000;
+    color: #000;
+}
+
+.item-portfolio {
+    width: 538px;
+    height: 365px;
+    background-color: #eaeaea;
+}
+
+.portfolio {
+}
+.portfolio__body {
+}
+.portfolio__header {
+}
+.portfolio__title {
+}
+.portfolio_row {
+}
+.item-portfolio {
+}
+.portfolio__footer {
+}
+.portfolio__button {
+}
+
+/*--- Конец секции portfolio ---*/
